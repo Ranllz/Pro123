@@ -33,6 +33,7 @@
             this.keyboardControl1 = new DevComponents.DotNetBar.Keyboard.KeyboardControl();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.SuspendLayout();
             // 
             // keyboardControl1
@@ -84,11 +85,24 @@
             this.buttonX1.Text = "buttonX1";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(76, 255);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(75, 23);
+            this.labelX1.TabIndex = 3;
+            this.labelX1.Text = "labelX1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 549);
+            this.Controls.Add(this.labelX1);
             this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.textBoxX1);
             this.Controls.Add(this.keyboardControl1);
@@ -103,6 +117,7 @@
         private DevComponents.DotNetBar.Keyboard.KeyboardControl keyboardControl1;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
         private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.LabelX labelX1;
     }
 }
 
