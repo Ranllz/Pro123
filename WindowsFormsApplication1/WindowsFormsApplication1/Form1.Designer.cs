@@ -32,6 +32,7 @@
             DevComponents.DotNetBar.Keyboard.FlatStyleRenderer flatStyleRenderer1 = new DevComponents.DotNetBar.Keyboard.FlatStyleRenderer();
             this.keyboardControl1 = new DevComponents.DotNetBar.Keyboard.KeyboardControl();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // keyboardControl1
@@ -56,7 +57,7 @@
             this.keyboardControl1.Size = new System.Drawing.Size(825, 250);
             this.keyboardControl1.TabIndex = 0;
             this.keyboardControl1.Text = "keyboardControl1";
-           // 
+            // 
             // textBoxX1
             // 
             // 
@@ -64,19 +65,31 @@
             // 
             this.textBoxX1.Border.Class = "TextBoxBorder";
             this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxX1.Location = new System.Drawing.Point(0, 0);
             this.textBoxX1.Multiline = true;
             this.textBoxX1.Name = "textBoxX1";
             this.textBoxX1.PreventEnterBeep = true;
-            this.textBoxX1.Size = new System.Drawing.Size(825, 299);
+            this.textBoxX1.Size = new System.Drawing.Size(825, 226);
             this.textBoxX1.TabIndex = 1;
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(360, 255);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(75, 23);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 2;
+            this.buttonX1.Text = "buttonX1";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 549);
+            this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.textBoxX1);
             this.Controls.Add(this.keyboardControl1);
             this.Name = "Form1";
@@ -89,6 +102,7 @@
 
         private DevComponents.DotNetBar.Keyboard.KeyboardControl keyboardControl1;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
 
